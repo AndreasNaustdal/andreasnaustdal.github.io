@@ -1,5 +1,5 @@
 <template>
-  <div class="test">
+  <div class="main-page">
     <nav-bar></nav-bar>
     <home-page></home-page>
     <prototypes-page></prototypes-page>
@@ -31,4 +31,8 @@ export default {
 </script>
 
 <style scoped>
+  .main-page {
+    display: flex;
+    flex-direction: column;
+  }
 </style>

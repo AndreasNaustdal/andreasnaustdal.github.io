@@ -1,5 +1,6 @@
 <template>
   <div class="games">
+    <h2>Finished games</h2>
   </div>
 </template>
 
@@ -10,4 +11,8 @@ export default {
 </script>
 
 <style scoped>
+.games {
+  padding: 8px;
+  background-color: #f0d175;
+}
 </style>

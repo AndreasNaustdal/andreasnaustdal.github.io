@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <header class="navbar">
     <ul>
       <li>
         <a href="#home">HOME</a>
@@ -9,7 +9,7 @@
         <a href="#contact">CONTACT</a>
       </li>
     </ul>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -19,4 +19,18 @@ export default {
 </script>
 
 <style scoped>
+.navbar {
+  background-color: #E2F0FF;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #56B0FF;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-right: 2%;
+}
 </style>
