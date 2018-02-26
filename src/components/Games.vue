@@ -13,6 +13,7 @@ export default {
 <style scoped>
 .games {
   padding: 8px;
-  background-color: #f0d175;
+  background-color: #f2f2f2;
+  height: 95vh;
 }
 </style>

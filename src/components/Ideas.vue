@@ -13,6 +13,7 @@ export default {
 <style scoped>
 .ideas {
   padding: 8px;
-  background-color: #D3FFE5;
+  background-color: #d5d5d5;
+  height: 95vh;
 }
 </style>

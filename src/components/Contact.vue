@@ -14,5 +14,6 @@ export default {
 .contact {
   padding: 8px;
   background-color: inherit;
+  height: 95vh;
 }
 </style>

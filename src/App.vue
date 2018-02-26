@@ -16,8 +16,20 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
-  color: #2c3e50;
   /* margin-top: 60px; */
+  color: #393939;
+}
+
+h1, h2 {
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 3em;
+  margin-top: 5%;
 }
 
 body {
@@ -26,6 +38,6 @@ body {
 
 html {
   height: 100%;
-  background-color: #FF000C;
+  background-color: #d5d5d5;
 }
 </style>

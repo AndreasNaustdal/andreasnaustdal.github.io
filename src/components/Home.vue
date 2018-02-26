@@ -13,6 +13,7 @@ export default {
 <style scoped>
 .home {
   padding: 8px;
-  background-color: #56B0FF;
+  background-color: #d5d5d5;
+  height: 95vh;
 }
 </style>

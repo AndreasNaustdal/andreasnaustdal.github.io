@@ -13,6 +13,7 @@ export default {
 <style scoped>
 .prototypes {
   padding: 8px;
-  background-color: #edf9fb;
+  background-color: #f2f2f2;
+  height: 95vh;
 }
 </style>
