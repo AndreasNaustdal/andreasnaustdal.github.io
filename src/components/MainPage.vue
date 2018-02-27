@@ -11,12 +11,15 @@
 
 <script>
 import Vue from 'vue';
+import VueFire from 'vuefire';
 import NavBar from './NavBar';
 import Home from './Home';
 import Prototypes from './Prototypes';
 import Ideas from './Ideas';
 import Games from './Games';
 import Contact from './Contact';
+
+Vue.use(VueFire);
 
 Vue.component('nav-bar', NavBar);
 Vue.component('home-page', Home);
