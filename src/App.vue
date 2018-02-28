@@ -40,4 +40,44 @@ html {
   height: 100%;
   background-color: #d5d5d5;
 }
+
+.threeColGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-auto-rows: minmax(320px, auto);
+  grid-gap: 1em;
+}
+.right {
+  text-align: center;
+}
+.right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projectList {
+  list-style: none;
+  background-color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .threeColGrid {
+    display: block;
+  }
+  .projectList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .projectList p {
+    margin: 0;
+  }
+
+  .center {
+    margin-bottom: 1em;
+  }
+}
 </style>

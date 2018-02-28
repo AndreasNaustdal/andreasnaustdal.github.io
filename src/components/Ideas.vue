@@ -1,16 +1,25 @@
 <template>
-  <div class="ideas">
-    <h2>Interesting ideas</h2>
-    <ul>
-      <li v-for="(idea, index) of ideas" :key="index">
-        <a href="#" v-on:click.prevent="selectedIdea = index">{{ idea['.key'] }}</a>
-      </li>
-    </ul>
-    <div id="selectedIdeaInfo" v-if="ideas[selectedIdea]">
-      <h3>{{ ideas[selectedIdea]['.key'] }}</h3>
-      <p>{{ ideas[selectedIdea].description }}</p>
-      <img width="320px" alt="screenshot"
-      v-if="ideas[selectedIdea].screenshot" :src="ideas[selectedIdea].screenshot">
+  <div id="ideas">
+    <h2>Ideas</h2>
+    <div class="threeColGrid">
+      <ul class="projectList">
+        <li v-for="(idea, index) of ideas" :key="index">
+          <b v-if="selectedIdea === index">{{ idea['.key'] }}</b>
+          <a v-if="selectedIdea !== index" href="#"
+          v-on:click.prevent="selectedIdea = index">{{ idea['.key'] }}</a>
+        </li>
+      </ul>
+      <div class="center" v-if="ideas[selectedIdea]">
+        <h3>{{ ideas[selectedIdea]['.key'] }}</h3>
+        <p class="description">
+          {{ ideas[selectedIdea].description }}
+        </p>
+        <a :href="ideas[selectedIdea].link">Download here</a>
+      </div>
+      <div class="right" v-if="ideas[selectedIdea]">
+        <img alt="screenshot"
+        v-if="ideas[selectedIdea].screenshot" :src="ideas[selectedIdea].screenshot">
+      </div>
     </div>
   </div>
 </template>
@@ -22,7 +31,7 @@ export default {
   name: 'Ideas',
   data() {
     return {
-      selectedIdea: 0,
+      selectedIdea: -1,
       ideas: {},
     };
   },
@@ -40,7 +49,7 @@ export default {
 </script>
 
 <style scoped>
-.ideas {
+#ideas {
   padding: 8px;
   background-color: #d5d5d5;
   height: 95vh;

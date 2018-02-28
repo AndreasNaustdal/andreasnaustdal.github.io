@@ -43,35 +43,38 @@ export default {
 .navbar {
   background-color: white;
 }
-
 ul {
   list-style: none;
-  display:flex;
 }
-ul#navLinksMobile {
-  justify-content: space-around;
+#navLinksDesktop {
+  display: flex;
 }
-
-li {
+#navLinksDesktop li {
   margin-right: 80px;
 }
-li:nth-of-type(5) {
+#navLinksDesktop li:nth-of-type(5) {
   margin-left:auto;
 }
-
+#navLinksMobile {
+  display: none;
+  justify-content: space-around;
+  padding-left: 0;
+}
+#navLinksMobile li {
+  text-align: center;
+}
 a {
+  @import url('https://fonts.googleapis.com/css?family=Raleway:500');
+  font-family: 'Raleway', sans-serif;
   color: #393939;
   font-size: 1.5em;
   text-decoration: none;
 }
 
-@media (min-width: 600px) {
-  #navLinksMobile {
-    display: none;
-  }
-}
-
 @media (max-width: 600px) {
+  #navLinksMobile {
+    display: flex;
+  }
   #navLinksDesktop {
     display: none;
   }
