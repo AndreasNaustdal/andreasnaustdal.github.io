@@ -31,7 +31,7 @@ export default {
 #home {
   padding: 8px;
   background-color: #d5d5d5;
-  height: 95vh;
+  min-height: 100vh;
 }
 
 #home p {

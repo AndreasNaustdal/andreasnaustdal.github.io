@@ -49,6 +49,6 @@ export default {
 #prototypes {
   padding: 8px;
   background-color: #f2f2f2;
-  height: 95vh;
+  min-height: 100vh;
 }
 </style>

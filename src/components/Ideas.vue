@@ -48,6 +48,6 @@ export default {
 #ideas {
   padding: 8px;
   background-color: #d5d5d5;
-  height: 95vh;
+  min-height: 100vh;
 }
 </style>
