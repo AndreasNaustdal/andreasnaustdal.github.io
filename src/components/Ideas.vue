@@ -39,10 +39,6 @@ export default {
   firebase: {
     ideas: {
       source: db.ref('ideas'),
-      // Optional, allows you to handle any errors.
-      // cancelCallback(err) {
-      //   console.error(err);
-      // },
     },
   },
 };

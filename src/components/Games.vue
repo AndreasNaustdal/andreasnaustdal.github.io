@@ -39,10 +39,6 @@ export default {
   firebase: {
     games: {
       source: db.ref('games'),
-      // Optional, allows you to handle any errors.
-      // cancelCallback(err) {
-      //   console.error(err);
-      // },
     },
   },
 };

@@ -23,10 +23,6 @@ export default {
   firebase: {
     links: {
       source: db.ref('links'),
-      // Optional, allows you to handle any errors.
-      // cancelCallback(err) {
-      //   console.error(err);
-      // },
     },
   },
 };

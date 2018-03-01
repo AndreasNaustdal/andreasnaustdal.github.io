@@ -40,10 +40,6 @@ export default {
   firebase: {
     prototypes: {
       source: db.ref('prototypes'),
-      // Optional, allows you to handle any errors.
-      // cancelCallback(err) {
-      //   console.error(err);
-      // },
     },
   },
 };
