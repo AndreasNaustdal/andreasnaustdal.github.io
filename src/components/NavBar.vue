@@ -3,30 +3,30 @@
     <nav>
         <ul id="navLinksDesktop">
           <li>
-            <a href="#home">HOME</a>
+            <router-link to="/">HOME</router-link>
           </li>
           <li>
-            <a href="#prototypes">PROTOTYPES</a>
+            <router-link to="/prototypes">PROTOTYPES</router-link>
           </li>
           <li>
-            <a href="#ideas">IDEAS</a>
+            <router-link to="/ideas">IDEAS</router-link>
           </li>
           <li>
-            <a href="#games">GAMES</a>
+            <router-link to="/games">GAMES</router-link>
           </li>
           <li>
-            <a href="#contact">CONTACT</a>
+            <router-link to="/contact">CONTACT</router-link>
           </li>
         </ul>
         <ul id="navLinksMobile">
           <li>
-            <a href="#prototypes">PROTOTYPES</a>
+            <router-link to="/prototypes">PROTOTYPES</router-link>
           </li>
           <li>
-            <a href="#ideas">IDEAS</a>
+            <router-link to="/ideas">IDEAS</router-link>
           </li>
           <li>
-            <a href="#games">GAMES</a>
+            <router-link to="/games">GAMES</router-link>
           </li>
         </ul>
     </nav>

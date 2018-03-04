@@ -49,7 +49,6 @@ export default {
 <style scoped>
 #ideas {
   padding: 8px;
-  background-color: #d5d5d5;
   min-height: 100vh;
 }
 </style>

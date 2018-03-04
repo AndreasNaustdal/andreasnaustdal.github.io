@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import MainPage from '@/components/MainPage';
 import Home from '@/components/Home';
 import Prototypes from '@/components/Prototypes';
 import Ideas from '@/components/Ideas';
@@ -13,11 +12,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'MainPage',
-      component: MainPage,
-    },
-    {
-      path: '/home',
       name: 'Home',
       component: Home,
     },

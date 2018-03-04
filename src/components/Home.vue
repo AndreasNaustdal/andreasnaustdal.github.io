@@ -1,9 +1,8 @@
 <template>
   <div id="home">
-    <h1>Projects and ideas</h1>
-    <p>
+    <h1>
       {{ home.welcomeText }}
-    </p>
+    </h1>
   </div>
 </template>
 
@@ -29,15 +28,23 @@ export default {
 
 <style scoped>
 #home {
-  padding: 8px;
-  background-color: #d5d5d5;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#home p {
-  line-height: 2em;
-  max-width: 600px;
-  margin-left: 5%;
-  margin-right: 5%;
+h1 {
+  font-size: 3em;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    margin-right: 5%;
+  }
 }
 </style>

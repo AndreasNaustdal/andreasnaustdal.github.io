@@ -1,10 +1,22 @@
 <template>
   <div id="app">
+    <nav-bar></nav-bar>
     <router-view/>
+    <contact-page></contact-page>
   </div>
 </template>
 
 <script>
+import Vue from 'vue';
+import VueFire from 'vuefire';
+import NavBar from './components/NavBar';
+import Contact from './components/Contact';
+
+Vue.use(VueFire);
+
+Vue.component('nav-bar', NavBar);
+Vue.component('contact-page', Contact);
+
 export default {
   name: 'App',
 };
@@ -18,18 +30,18 @@ export default {
   /* text-align: center; */
   /* margin-top: 60px; */
   color: #393939;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2 {
-  margin-left: 5%;
+#home, #prototypes, #ideas, #games {
+  background-color: #f2f2f2;
 }
 
-h1 {
-  font-size: 5em;
-}
 h2 {
   font-size: 3em;
   margin-top: 5%;
+  margin-left: 5%;
 }
 
 body {
@@ -62,8 +74,12 @@ html {
   padding-bottom: 16px;
   margin-top: 0;
 }
+.projectList li {
+  margin-bottom: 8px;
+}
 
 @media (max-width: 600px) {
+
   .threeColGrid {
     display: block;
   }
