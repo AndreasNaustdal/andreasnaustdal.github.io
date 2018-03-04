@@ -14,7 +14,10 @@
         <p class="description">
           {{ prototypes[selectedPrototype].description }}
         </p>
-        <a :href="prototypes[selectedPrototype].link">Download here</a>
+        <a v-if="prototypes[selectedPrototype].play"
+        :href="prototypes[selectedPrototype].play">Play here</a>
+        <a v-if="prototypes[selectedPrototype].download"
+        :href="prototypes[selectedPrototype].download">Download here</a>
       </div>
       <div class="right" v-if="prototypes[selectedPrototype]">
         <img alt="screenshot"

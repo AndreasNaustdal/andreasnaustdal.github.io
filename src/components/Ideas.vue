@@ -14,7 +14,9 @@
         <p class="description">
           {{ ideas[selectedIdea].description }}
         </p>
-        <a :href="ideas[selectedIdea].link">Download here</a>
+        <a v-if="ideas[selectedIdea].play" :href="ideas[selectedIdea].play">Play here</a>
+        <a v-if="ideas[selectedIdea].download"
+        :href="ideas[selectedIdea].download">Download here</a>
       </div>
       <div class="right" v-if="ideas[selectedIdea]">
         <img alt="screenshot"

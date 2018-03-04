@@ -14,7 +14,9 @@
         <p class="description">
           {{ games[selectedGame].description }}
         </p>
-        <a :href="games[selectedGame].link">Download here</a>
+        <a v-if="games[selectedGame].play" :href="games[selectedGame].play">Play here</a>
+        <a v-if="games[selectedGame].download"
+        :href="games[selectedGame].download">Download here</a>
       </div>
       <div class="right" v-if="games[selectedGame]">
         <img alt="screenshot"
