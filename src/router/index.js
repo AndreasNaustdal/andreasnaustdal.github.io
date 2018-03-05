@@ -4,7 +4,6 @@ import Home from '@/components/Home';
 import Prototypes from '@/components/Prototypes';
 import Ideas from '@/components/Ideas';
 import Games from '@/components/Games';
-import Contact from '@/components/Contact';
 
 Vue.use(Router);
 
@@ -29,11 +28,6 @@ export default new Router({
       path: '/games',
       name: 'Games',
       component: Games,
-    },
-    {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact,
     },
   ],
 });

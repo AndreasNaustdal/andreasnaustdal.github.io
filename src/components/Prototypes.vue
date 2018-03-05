@@ -50,7 +50,6 @@ export default {
 
 <style scoped>
 #prototypes {
-  padding: 8px;
   min-height: 100vh;
 }
 </style>

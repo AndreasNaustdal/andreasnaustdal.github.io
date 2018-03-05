@@ -29,13 +29,29 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   /* margin-top: 60px; */
-  color: #393939;
+  color: #ccc9b8;
   display: flex;
   flex-direction: column;
 }
 
 #home, #prototypes, #ideas, #games {
-  background-color: #f2f2f2;
+  background-color: #212E23;
+}
+.navbar {
+  background-color: #728554;
+}
+.projectList {
+  background-color: #364430;
+}
+
+html {
+  height: 100%;
+  background-color: #422e24;
+}
+
+h1, h2 {
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -46,11 +62,6 @@ h2 {
 
 body {
   margin: 0;
-}
-
-html {
-  height: 100%;
-  background-color: #d5d5d5;
 }
 
 .threeColGrid {
@@ -69,13 +80,20 @@ html {
 
 .projectList {
   list-style: none;
-  background-color: white;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
   margin-top: 0;
 }
 .projectList li {
   margin-bottom: 8px;
+}
+
+a {
+  @import url('https://fonts.googleapis.com/css?family=Raleway:500');
+  font-family: 'Raleway', sans-serif;
+  /* color: #393939; */
+  color: #c7cfc0;
+  font-size: 1em;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {

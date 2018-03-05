@@ -15,7 +15,7 @@
             <router-link to="/games">GAMES</router-link>
           </li>
           <li>
-            <router-link to="/contact">CONTACT</router-link>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
         <ul id="navLinksMobile">
@@ -40,9 +40,6 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  background-color: white;
-}
 ul {
   list-style: none;
 }
@@ -64,11 +61,7 @@ ul {
   text-align: center;
 }
 a {
-  @import url('https://fonts.googleapis.com/css?family=Raleway:500');
-  font-family: 'Raleway', sans-serif;
-  color: #393939;
   font-size: 1.5em;
-  text-decoration: none;
 }
 
 @media (max-width: 600px) {

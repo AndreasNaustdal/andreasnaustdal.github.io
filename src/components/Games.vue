@@ -48,7 +48,6 @@ export default {
 
 <style scoped>
 #games {
-  padding: 8px;
   min-height: 100vh;
 }
 </style>
