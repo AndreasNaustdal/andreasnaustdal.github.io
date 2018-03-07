@@ -44,4 +44,12 @@ li {
 h3 {
   margin-left: 5%;
 }
+
+@media (max-width: 600px) {
+  ul {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 </style>
