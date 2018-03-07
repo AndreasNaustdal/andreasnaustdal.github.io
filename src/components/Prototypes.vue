@@ -10,7 +10,9 @@
         </li>
       </ul>
       <div class="center" v-if="prototypes[selectedPrototype]">
-        <h3>{{ prototypes[selectedPrototype]['.key'] }}</h3>
+        <h3>
+          {{ prototypes[selectedPrototype]['.key'] }} ({{ prototypes[selectedPrototype].year }})
+        </h3>
         <p class="description">
           {{ prototypes[selectedPrototype].description }}
         </p>
@@ -35,7 +37,7 @@ export default {
   name: 'Prototypes',
   data() {
     return {
-      selectedPrototype: -1,
+      selectedPrototype: 0,
       prototypes: {},
     };
   },

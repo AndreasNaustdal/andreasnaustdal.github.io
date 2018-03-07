@@ -9,10 +9,10 @@
             <router-link to="/prototypes">PROTOTYPES</router-link>
           </li>
           <li>
-            <router-link to="/ideas">IDEAS</router-link>
+            <router-link to="/games">GAMES</router-link>
           </li>
           <li>
-            <router-link to="/games">GAMES</router-link>
+            <router-link to="/music">MUSIC</router-link>
           </li>
           <li>
             <a href="#contact">CONTACT</a>
@@ -23,10 +23,10 @@
             <router-link to="/prototypes">PROTOTYPES</router-link>
           </li>
           <li>
-            <router-link to="/ideas">IDEAS</router-link>
+            <router-link to="/games">GAMES</router-link>
           </li>
           <li>
-            <router-link to="/games">GAMES</router-link>
+            <router-link to="/music">MUSIC</router-link>
           </li>
         </ul>
     </nav>
@@ -40,9 +40,6 @@ export default {
 </script>
 
 <style scoped>
-ul {
-  list-style: none;
-}
 #navLinksDesktop {
   display: flex;
 }

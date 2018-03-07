@@ -34,7 +34,7 @@ export default {
   flex-direction: column;
 }
 
-#home, #prototypes, #ideas, #games {
+#home, #prototypes, #music, #games {
   background-color: #212E23;
 }
 .navbar {
@@ -60,6 +60,20 @@ h2 {
   margin-left: 5%;
 }
 
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+}
+
+.center {
+  padding: 8px;
+}
+.center a {
+  color: #49c7ce;
+}
+
 body {
   margin: 0;
 }
@@ -78,8 +92,11 @@ body {
   max-height: 100%;
 }
 
-.projectList {
+ul {
   list-style: none;
+}
+
+.projectList {
   padding: 16px;
   margin-top: 0;
 }
@@ -94,6 +111,10 @@ a {
   color: #c7cfc0;
   font-size: 1em;
   text-decoration: none;
+}
+
+h3, b {
+  color: #cedbdb;
 }
 
 @media (max-width: 600px) {

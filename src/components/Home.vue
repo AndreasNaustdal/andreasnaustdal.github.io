@@ -44,6 +44,7 @@ h1 {
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
+    font-weight: 500;
     margin-right: 5%;
   }
 }

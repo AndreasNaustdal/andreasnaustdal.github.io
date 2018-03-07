@@ -2,8 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
 import Prototypes from '@/components/Prototypes';
-import Ideas from '@/components/Ideas';
 import Games from '@/components/Games';
+import Music from '@/components/Music';
 
 Vue.use(Router);
 
@@ -20,14 +20,14 @@ export default new Router({
       component: Prototypes,
     },
     {
-      path: '/ideas',
-      name: 'Ideas',
-      component: Ideas,
-    },
-    {
       path: '/games',
       name: 'Games',
       component: Games,
+    },
+    {
+      path: '/music',
+      name: 'Music',
+      component: Music,
     },
   ],
 });

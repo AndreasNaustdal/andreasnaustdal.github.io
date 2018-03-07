@@ -10,7 +10,7 @@
         </li>
       </ul>
       <div class="center" v-if="games[selectedGame]">
-        <h3>{{ games[selectedGame]['.key'] }}</h3>
+        <h3>{{ games[selectedGame]['.key'] }} ({{ games[selectedGame].year }})</h3>
         <p class="description">
           {{ games[selectedGame].description }}
         </p>
@@ -33,7 +33,7 @@ export default {
   name: 'Games',
   data() {
     return {
-      selectedGame: -1,
+      selectedGame: 0,
       games: {},
     };
   },
