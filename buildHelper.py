@@ -3,7 +3,7 @@ import subprocess
 import os
 
 final = 'index.html'
-temp = 'index2.html'
+temp = 'temp.html'
 
 shutil.rmtree('dist')
 
@@ -34,7 +34,8 @@ with open(distfile, 'r') as fin:
     end = content.replace('</script>','XXXXXXXXX', 2).find('</script>') + 9; print(end)
     script3 = content[start:end].replace('=/static','=dist/static'); print(script3)
 
-with open(temp, 'r') as readfile:
+copyfrom = 'index.html'
+with open(copyfrom, 'r') as readfile:
     content = readfile.readlines()
 
 content.insert(6, '    ' + link + '\n');
