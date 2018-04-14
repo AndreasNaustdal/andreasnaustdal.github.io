@@ -5,6 +5,8 @@ import os
 final = 'index.html'
 temp = 'index2.html'
 
+shutil.rmtree('dist')
+
 ignored_lines = [7, 12, 13, 14]
 
 with open(final, 'r') as fin, open(temp, 'w') as fout:
