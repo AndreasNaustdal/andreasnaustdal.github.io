@@ -5,6 +5,7 @@ import os
 final = 'index.html'
 temp = 'temp.html'
 
+#Before building, delete 'dist' folder and tags to the 'dist' folder inside the main 'index.html'
 shutil.rmtree('dist')
 
 ignored_lines = [7, 12, 13, 14]
@@ -17,6 +18,8 @@ with open(final, 'r') as fin, open(temp, 'w') as fout:
 
 subprocess.run('npm run build', shell=True)
 
+#Copy all link and script tags in 'dist/index.html' and paste them into the main 'index.html'
+#add 'dist/' at the beginning of the 'src' in all of the pasted tags
 distfile = 'dist/index.html'
 
 with open(distfile, 'r') as fin:
@@ -49,5 +52,6 @@ with open(temp, 'w') as writefile:
     content = ''.join(content)
     writefile.write(content)
 
+#replace the old 'index.html' with the new file
 os.remove(final)
 os.rename(temp, final)
