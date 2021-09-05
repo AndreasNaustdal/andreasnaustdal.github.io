@@ -108,7 +108,7 @@ a {
   @import url('https://fonts.googleapis.com/css?family=Raleway:500');
   font-family: 'Raleway', sans-serif;
   /* color: #393939; */
-  color: #ffffff;
+  color: #c7cfc0;
   font-size: 1em;
   text-decoration: none;
 }
